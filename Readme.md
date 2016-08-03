@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Марк Селяев](https://up.htmlacademy.ru/htmlcss/14/user/170182).
-* Наставник: `Ilya Borisenko`.
+* Наставник: [`Ilya Borisenko`][https://htmlacademy.ru/profile/id39390].
 
 ---
 
