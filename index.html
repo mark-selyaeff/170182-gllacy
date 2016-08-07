@@ -5,8 +5,137 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo"><img src="#" alt=""></div>
+        <nav class="site-map">
+          <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+        </nav>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+        <div class="user-block">
+          <a href="#"><span class="sprite find"></span></a>
+          <a href="#"><span class="sprite login">Вход</span></a>
+          <a href="#"><span class="sprite cart">Пусто</span></a>
+        </div>
+
+        <section class="contacts">
+          <div class="schedule">С 10 до 20, ежедневно</div>
+          <div class="phone-number">8 812 450-25-25</div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="slider">
+        <input type="radio" name="toggle" id="btn-1" checked>
+        <input type="radio" name="toggle" id="btn-2">
+        <input type="radio" name="toggle" id="btn-3">
+        <div class="slider-inner">
+          <div class="slider-slides">
+            <img src="img-1" alt="">
+            <img src="img-2" alt="">
+            <img src="img-3" alt="">
+          </div>
+        </div>
+      </section>
+      <a href="#">Давайте оба!</a>
+
+      <section class="current-sales">
+        <div class="sales-block strawberry">
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
+             банку малинового варенья бесплатно.
+           </p>
+           <a href="#">Хочу варенье!</a>
+        </div>
+        <div class="sales-block chocolate">
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке пломбира, добавим в ваш заказ упаковку вкуснейшей
+          шоколадной присыпки совершенно бесплатно.</p>
+          <a href="#">Хочу шоколадки!</a>
+        </div>
+      </section>
+
+
+      <section class="hits">
+        <div class="ice-creams"><span class="image"></span><span>
+          Сливочное с апельсиновым джемом и цитрусовой стружкой
+        </span></div>
+        <div class="ice-creams"><span class="image"></span><span>
+          Сливочно-кофейное с кусочками шоколада
+        </span></div>
+        <div class="ice-creams"><span class="image"></span><span>
+          Сливочно-клубничное с присыпкой из белого шоколада
+        </span></div>
+        <div class="ice-creams"><span class="image"></span><span>
+          Сливочное крем-брюле с карамельное подливкой
+        </span></div>
+      </section>
+
+      <section class="about-us">
+        <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого
+           собственного производства на развес</h2>
+        <ul>
+          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+        </ul>
+      </section>
+
+      <section class="news-in-blog">
+        <h3>Новое в нашем блоге</h3>
+        <a href="#">10  способов сервировки
+        <br>фруктовых щербетов
+        <br>к столу</a>
+      </section>
+
+      <section class="email-service">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+        <input type="email" name="email" placehoder="Электронная почта">
+        <button>Отправить</button>
+      </section>
+
+      <section class="address">
+        <div class="map">
+          <div class="address-block">
+            <div class="address-description">Адрес главного магазина и <br>
+            оффлайн магазина</div>
+            <div class="address-data">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</div>
+            <div class="address-description">Для заказов по телефону:</div>
+            <div class="address-data">8 812 450-25-25</div>
+            <div class="address-description">(с 10 до 20 ежедневно)</div>
+            <a href="#">Форма обратной связи</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+    <div class="container">
+      <section class="social">
+        <a href="#" class="social-tw"></a>
+        <a href="#" class="social-inst"></a>
+        <a href="#" class="social-fb"></a>
+        <a href="#" class="social-vk"></a>
+      </section>
+      <section class="additional-info">
+        <div>Для поставщиков</div>
+        <div>О производстве</div>
+        <div>Наши документы</div>
+        <div>Экологические стандарты</div>
+      </section>
+      <section class="developed-by">
+        <img src="#" alt="HTML Academy">
+        <div>Сделано в <a href="#">HTML Academy © 2016</a></div>
+      </section>
+    </div>
+    </footer>
 
   </body>
 </html>
