@@ -13,7 +13,7 @@
       <div class="logo"><img src="#" alt=""></div>
       <nav class="site-map">
         <ul>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="#" class="active">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
@@ -22,7 +22,7 @@
       <div class="user-block">
         <a href="#"><span class="sprite find"></span></a>
         <a href="#"><span class="sprite login">Вход</span></a>
-        <a href="#"><span class="sprite cart">2 товара</span></a>
+        <a href="#" class="in=cart"><span class="sprite cart">2 товара</span></a>
       </div>
 
       <section class="contacts">
@@ -40,6 +40,7 @@
         <li><a href="">Сливочное</a></li>
       </ul>
     </section>
+    <section class="filters-block">
     <h1>Сливочное мороженое</h1>
     <form name="filters">
       <label for="sort-method"><select name="sort-method" size="1">
@@ -55,65 +56,65 @@
         <label><input type="radio" name="percent-fat" id="" value="-30%">До 30%</label>
         <label><input type="radio" name="percent-fat" id="" value="+30%">Выше 30%</label>
       </label>
-      <label for="inner">
+      <div class="inner">
         <label><input type="checkbox" name="inner" checked>Шоколадные</label>
         <label><input type="checkbox" name="inner" checked>Сахарные присыпки</label>
         <label><input type="checkbox" name="inner">Фрукты</label>
         <label><input type="checkbox" name="inner">Сиропы</label>
         <label><input type="checkbox" name="inner">Джемы</label>
-      </label>
+      </div>
       <button>Отправить</button>
     </form>
-
+  </section>
     <section class="items-list-block">
-      <figure class="item1"><a href="">
+      <div class="item1"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
-        </a></figure>
-      <figure class="item2"><a href="">
+          <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+        </a></div>
+      <div class="item2"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
-        </a></figure>
-      <figure class="item3"><a href="">
+          <span>Сливочно-кофейное с кусочками шоколада</span>
+        </a></div>
+      <div class="item3"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
-        </a></figure>
-      <figure class="item4"><a href="">
+          <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+        </a></div>
+      <div class="item4"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
-        </a></figure>
-      <figure class="item5"><a href="">
+          <span>Сливочное крем-брюле с карамельной подливкой</span>
+        </a></div>
+      <div class="item5"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочное с брусничным джемом</figcaption>
-        </a></figure>
-      <figure class="item6"><a href="">
+          <span>Сливочное с брусничным джемом</span>
+        </a></div>
+      <div class="item6"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочно-черничное с цельными ягодами черники</figcaption>
-        </a></figure>
-      <figure class="item7"><a href="">
+          <span>Сливочно-черничное с цельными ягодами черники</span>
+        </a></div>
+      <div class="item7"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочно-лимонное с карамельной присыпкой</figcaption>
-        </a></figure>
-      <figure class="item8"><a href="">
+          <span>Сливочно-лимонное с карамельной присыпкой</span>
+        </a></div>
+      <div class="item8"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочное с шоколадной стружкой</figcaption>
-        </a></figure>
-      <figure class="item9"><a href="">
+          <span>Сливочное с шоколадной стружкой</span>
+        </a></div>
+      <div class="item9"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочно-ванильное с кусочками шоколада</figcaption>
-        </a></figure>
-      <figure class="item10"><a href="">
+          <span>Сливочно-ванильное с кусочками шоколада</span>
+        </a></div>
+      <div class="item10"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочное с ментоловым сиропом</figcaption>
-        </a></figure>
-      <figure class="item11"><a href="">
+          <span>Сливочное с ментоловым сиропом</span>
+        </a></div>
+      <div class="item11"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочное с кусочками черного шоколада</figcaption>
-        </a></figure>
-      <figure class="item12"><a href="">
+          <span>Сливочное с кусочками черного шоколада</span>
+        </a></div>
+      <div class="item12"><a href="">
           <img src="" alt="">
-          <figcaption>Сливочное с мятным сиропом</figcaption>
-        </a></figure>
+          <span>Сливочное с мятным сиропом</span>
+        </a></div>
     </section>
 
     <div class="pages">
@@ -134,10 +135,12 @@
       <a href="#" class="social-vk"></a>
     </section>
     <section class="additional-info">
-      <div>Для поставщиков</div>
-      <div>О производстве</div>
-      <div>Наши документы</div>
-      <div>Экологические стандарты</div>
+      <ul>
+        <li class="additional-link"><a href="#">Для поставщиков</a></li>
+        <li class="additional-link"><a href="#">О производстве</a></li>
+        <li class="additional-link"><a href="#">Наши документы</a></li>
+        <li class="additional-link"><a href="#">Экологические стандарты</a></li>
+      </ul>
     </section>
     <section class="developed-by">
       <img src="#" alt="HTML Academy">
