@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gllcy Catalog</title>
 </head>
+
 <body>
 
   <header class="main-header">
@@ -36,118 +38,155 @@
     <section class="breadcrumbs">
       <ul>
         <li><a href="">Главная</a></li>
-        <li><a href="">Каталог</a></li>
-        <li><a href="">Сливочное</a></li>
-      </ul>
-    </section>
-    <section class="filters-block">
-    <h1>Сливочное мороженое</h1>
-    <form name="filters">
-      <label for="sort-method"><select name="sort-method" size="1">
-        <option value="popular">По популярности</option>
-        <option value="price-up">Сначала недорогие</option>
-        <option value="price-down">Сначала дорогие</option>
-        <option value="fatness">По жирности</option>
-      </select>Сортировка:</label>
-      <label for="price"><input type="range" name="price" id="">Цена: 100 - 500 руб.</label>   <!-- Вообще хз как делать этот инпут и лэйбл -->
-      <label for="percent-fat">Жирность:
-        <label><input type="radio" name="percent-fat" id="" value="0%">0%</label>
-        <label><input type="radio" name="percent-fat" id="" value="10%" checked>До 10%</label>
-        <label><input type="radio" name="percent-fat" id="" value="-30%">До 30%</label>
-        <label><input type="radio" name="percent-fat" id="" value="+30%">Выше 30%</label>
-      </label>
-      <div class="inner">
-        <label><input type="checkbox" name="inner" checked>Шоколадные</label>
-        <label><input type="checkbox" name="inner" checked>Сахарные присыпки</label>
-        <label><input type="checkbox" name="inner">Фрукты</label>
-        <label><input type="checkbox" name="inner">Сиропы</label>
-        <label><input type="checkbox" name="inner">Джемы</label>
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Сливочное</a></li>
+          </ul>
+      </section>
+      <section class="filters-block">
+        <h1>Сливочное мороженое</h1>
+        <form name="filters">
+          <label for="sort-method">
+            <select name="sort-method" size="1">
+              <option value="popular">По популярности</option>
+              <option value="price-up">Сначала недорогие</option>
+              <option value="price-down">Сначала дорогие</option>
+              <option value="fatness">По жирности</option>
+            </select>Сортировка:</label>
+          <label for="price">
+            <input type="range" name="price" id="">Цена: 100 - 500 руб.</label>
+          <!-- Вообще хз как делать этот инпут и лэйбл -->
+          <label for="percent-fat">Жирность:
+            <label>
+              <input type="radio" name="percent-fat" id="" value="0%">0%</label>
+            <label>
+              <input type="radio" name="percent-fat" id="" value="10%" checked>До 10%</label>
+            <label>
+              <input type="radio" name="percent-fat" id="" value="-30%">До 30%</label>
+            <label>
+              <input type="radio" name="percent-fat" id="" value="+30%">Выше 30%</label>
+          </label>
+          <div class="inner">
+            <label>
+              <input type="checkbox" name="inner" checked>Шоколадные</label>
+            <label>
+              <input type="checkbox" name="inner" checked>Сахарные присыпки</label>
+            <label>
+              <input type="checkbox" name="inner">Фрукты</label>
+            <label>
+              <input type="checkbox" name="inner">Сиропы</label>
+            <label>
+              <input type="checkbox" name="inner">Джемы</label>
+          </div>
+          <button>Отправить</button>
+        </form>
+      </section>
+      <section class="items-list-block">
+        <div class="item1">
+          <a href="">
+            <img src="img/1-main.jpg" alt="">
+            <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+          </a>
+        </div>
+        <div class="item2">
+          <a href="">
+            <img src="img/2-main.jpg" alt="">
+            <span>Сливочно-кофейное с кусочками шоколада</span>
+          </a>
+        </div>
+        <div class="item3">
+          <a href="">
+            <img src="img/3-main.jpg" alt="">
+            <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+          </a>
+        </div>
+        <div class="item4">
+          <a href="">
+            <img src="img/4-main.jpg" alt="">
+            <span>Сливочное крем-брюле с карамельной подливкой</span>
+          </a>
+        </div>
+        <div class="item5">
+          <a href="">
+            <img src="img/catalog-item-images/1.jpg" alt="">
+            <span>Сливочное с брусничным джемом</span>
+          </a>
+        </div>
+        <div class="item6">
+          <a href="">
+            <img src="img/catalog-item-images/2.jpg" alt="">
+            <span>Сливочно-черничное с цельными ягодами черники</span>
+          </a>
+        </div>
+        <div class="item7">
+          <a href="">
+            <img src="img/catalog-item-images/3.jpg" alt="">
+            <span>Сливочно-лимонное с карамельной присыпкой</span>
+          </a>
+        </div>
+        <div class="item8">
+          <a href="">
+            <img src="img/catalog-item-images/4.jpg" alt="">
+            <span>Сливочное с шоколадной стружкой</span>
+          </a>
+        </div>
+        <div class="item9">
+          <a href="">
+            <img src="img/catalog-item-images/5.jpg" alt="">
+            <span>Сливочно-ванильное с кусочками шоколада</span>
+          </a>
+        </div>
+        <div class="item10">
+          <a href="">
+            <img src="img/catalog-item-images/6.jpg" alt="">
+            <span>Сливочное с ментоловым сиропом</span>
+          </a>
+        </div>
+        <div class="item11">
+          <a href="">
+            <img src="img/catalog-item-images/7.jpg" alt="">
+            <span>Сливочное с кусочками черного шоколада</span>
+          </a>
+        </div>
+        <div class="item12">
+          <a href="">
+            <img src="img/catalog-item-images/8.jpg" alt="">
+            <span>Сливочное с мятным сиропом</span>
+          </a>
+        </div>
+      </section>
+
+      <div class="pages">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
       </div>
-      <button>Отправить</button>
-    </form>
-  </section>
-    <section class="items-list-block">
-      <div class="item1"><a href="">
-          <img src="img/1-main.jpg" alt="">
-          <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-        </a></div>
-      <div class="item2"><a href="">
-          <img src="img/2-main.jpg" alt="">
-          <span>Сливочно-кофейное с кусочками шоколада</span>
-        </a></div>
-      <div class="item3"><a href="">
-          <img src="img/3-main.jpg" alt="">
-          <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-        </a></div>
-      <div class="item4"><a href="">
-          <img src="img/4-main.jpg" alt="">
-          <span>Сливочное крем-брюле с карамельной подливкой</span>
-        </a></div>
-      <div class="item5"><a href="">
-          <img src="img/catalog-item-images/1.jpg" alt="">
-          <span>Сливочное с брусничным джемом</span>
-        </a></div>
-      <div class="item6"><a href="">
-          <img src="img/catalog-item-images/2.jpg" alt="">
-          <span>Сливочно-черничное с цельными ягодами черники</span>
-        </a></div>
-      <div class="item7"><a href="">
-          <img src="img/catalog-item-images/3.jpg" alt="">
-          <span>Сливочно-лимонное с карамельной присыпкой</span>
-        </a></div>
-      <div class="item8"><a href="">
-          <img src="img/catalog-item-images/4.jpg" alt="">
-          <span>Сливочное с шоколадной стружкой</span>
-        </a></div>
-      <div class="item9"><a href="">
-          <img src="img/catalog-item-images/5.jpg" alt="">
-          <span>Сливочно-ванильное с кусочками шоколада</span>
-        </a></div>
-      <div class="item10"><a href="">
-          <img src="img/catalog-item-images/6.jpg" alt="">
-          <span>Сливочное с ментоловым сиропом</span>
-        </a></div>
-      <div class="item11"><a href="">
-          <img src="img/catalog-item-images/7.jpg" alt="">
-          <span>Сливочное с кусочками черного шоколада</span>
-        </a></div>
-      <div class="item12"><a href="">
-          <img src="img/catalog-item-images/8.jpg" alt="">
-          <span>Сливочное с мятным сиропом</span>
-        </a></div>
-    </section>
+      </main>
 
-    <div class="pages">
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-    </div>
-  </main>
-
-  <footer class="main-footer">
-  <div class="container">
-    <section class="social">
-      <a href="#" class="social-tw"><img src="img/tw.svg" alt=""></a>
-      <a href="#" class="social-inst"><img src="img/inst.svg" alt=""></a>
-      <a href="#" class="social-fb"><img src="img/fb.svg" alt=""></a>
-      <a href="#" class="social-vk"><img src="img/vk.svg" alt=""></a>
-    </section>
-    <section class="additional-info">
-      <ul>
-        <li class="additional-link"><a href="#">Для поставщиков</a></li>
-        <li class="additional-link"><a href="#">О производстве</a></li>
-        <li class="additional-link"><a href="#">Наши документы</a></li>
-        <li class="additional-link"><a href="#">Экологические стандарты</a></li>
-      </ul>
-    </section>
-    <section class="developed-by">
-      <img src="hacademy-logo.svg" alt="HTML Academy">
-      <div>Сделано в <a href="#">HTML Academy © 2016</a></div>
-    </section>
-  </div>
-  </footer>
+      <footer class="main-footer">
+        <div class="container">
+          <section class="social">
+            <a href="#" class="social-tw"><img src="img/tw.svg" alt=""></a>
+            <a href="#" class="social-inst"><img src="img/inst.svg" alt=""></a>
+            <a href="#" class="social-fb"><img src="img/fb.svg" alt=""></a>
+            <a href="#" class="social-vk"><img src="img/vk.svg" alt=""></a>
+          </section>
+          <section class="additional-info">
+            <ul>
+              <li class="additional-link"><a href="#">Для поставщиков</a></li>
+              <li class="additional-link"><a href="#">О производстве</a></li>
+              <li class="additional-link"><a href="#">Наши документы</a></li>
+              <li class="additional-link"><a href="#">Экологические стандарты</a></li>
+            </ul>
+          </section>
+          <section class="developed-by">
+            <img src="hacademy-logo.svg" alt="HTML Academy">
+            <div>Сделано в <a href="#">HTML Academy © 2016</a></div>
+          </section>
+        </div>
+      </footer>
 
 </body>
+
 </html>
