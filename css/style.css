@@ -2,7 +2,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-family: "Roboto";
-  color: white;
+  color: black;
   font-weight: normal;
   background-color: none;
 }
@@ -10,7 +10,7 @@ body {
 h2 {
   font-size: 35px;
   line-height: 41px;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
@@ -136,13 +136,13 @@ main {
 .map {
   height: 430px;
   outline: 1px solid black;
-  margin-bottom: 0px;
 }
 
 .main-footer section {
   outline: 1px solid black;
   float: left;
   min-height: 104px;
+  margin-top: 0px;
 }
 
 .social {
@@ -158,4 +158,42 @@ main {
 .developed-by {
   width: 267px;
   margin-right: 0px;
+}
+
+/* Стили для catalog.html */
+.breadcrumbs {
+  outline: 1px solid black;
+}
+
+.items-list-block {
+  outline: 1px solid black;
+  font-size: 0;
+  margin-bottom: 70px;
+}
+
+.items-list-block > div {
+  display: inline-block;
+  outline: 1px solid black;
+  width: 267px;
+  min-height: 339px;
+  font-size: 18px;
+  margin-right: 26px;
+  vertical-align: top;
+}
+
+.items-list-block > div:nth-child(4n) {
+  margin-right: 0;
+}
+
+.pages {
+  outline: 1px solid black;
+  text-align: right;
+}
+
+.pages a {
+  outline: 1px solid black;
+}
+
+.catalog-footer {
+  margin-top: 26px;
 }
