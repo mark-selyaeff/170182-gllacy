@@ -4,6 +4,7 @@ body {
   font-family: "Roboto";
   color: white;
   font-weight: normal;
+  background-color: none;
 }
 
 h2 {
@@ -11,4 +12,150 @@ h2 {
   line-height: 41px;
   color: white;
   font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1146px;
+  min-height: 66px;
+  margin: 0 auto;
+  padding: 0;
+  outline: 1px solid black;
+}
+
+.main-menu {
+  min-height: 66px;
+  width: 560px;
+  float: left;
+  outline: 1px solid black;
+}
+
+.user-block {
+  min-height: 66px;
+  width: 267px;
+  float: right;
+}
+
+main {
+  width: 1146px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+
+.slider {
+  min-height: 581px;
+  outline: 1px solid black;
+  margin: 0 auto;
+}
+
+.current-sales {
+  min-height: 232px;
+  outline: 1px solid black;
+  margin-bottom: 38px;
+}
+
+.sales-block {
+  width: 560px;
+  min-height: 232px;
+  border-radius: 10%;
+  border: 1px solid yellow;
+  float: left;
+}
+
+.sales-block:last-child {
+  float: right;
+}
+
+.hits {
+  min-height: 333px;
+  background: black;
+  outline: 1px solid black;
+  font-size: 0;
+  margin-bottom: 32px;
+}
+
+.hits .ice-creams {
+  width: 267px;
+  min-height: 333px;
+  display: inline-block;
+  outline: 1px solid white;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 26px;
+}
+
+.hits .ice-creams:last-child {
+  margin: 0;
+}
+
+.hits .ice-creams span {
+  outline: 1px solid white;
+  display: inline-block;
+}
+
+.hits .ice-creams .image {
+  background-color: white;
+  display: inline-block;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+}
+
+.about-us {
+  min-height: 310px;
+  outline: 1px solid black;
+  background-color: green;
+  color: black;
+  margin-bottom: 37px;
+}
+
+.bottom-block {
+  min-height: 223px;
+  width: 560px;
+  outline: 1px solid black;
+}
+
+.email-service {
+  float: right;
+}
+
+.news-in-blog {
+  float: left;
+  color: black;
+}
+
+.feedback {
+  margin-bottom: 40px;
+}
+
+.map {
+  height: 430px;
+  outline: 1px solid black;
+  margin-bottom: 0px;
+}
+
+.main-footer section {
+  outline: 1px solid black;
+  float: left;
+  min-height: 104px;
+}
+
+.social {
+  width: 267px;
+  margin-right: 26px;
+}
+
+.additional-info {
+  width: 560px;
+  margin-right: 26px;
+}
+
+.developed-by {
+  width: 267px;
+  margin-right: 0px;
 }
