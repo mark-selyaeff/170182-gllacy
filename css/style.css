@@ -79,7 +79,7 @@ main {
   margin-bottom: 32px;
 }
 
-.hits .ice-creams {
+.hits .item {
   width: 267px;
   min-height: 333px;
   display: inline-block;
@@ -87,24 +87,13 @@ main {
   font-size: 18px;
   text-align: center;
   margin-right: 26px;
+  vertical-align: baseline;
 }
 
-.hits .ice-creams:last-child {
+.hits .item:last-child {
   margin: 0;
 }
 
-.hits .ice-creams span {
-  outline: 1px solid white;
-  display: inline-block;
-}
-
-.hits .ice-creams .image {
-  background-color: white;
-  display: inline-block;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-}
 
 .about-us {
   min-height: 310px;
