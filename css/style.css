@@ -11,7 +11,7 @@ body {
 h2 {
   font-size: 35px;
   line-height: 41px;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -144,7 +144,11 @@ main .container {
 .slider {
   min-height: 581px;
   outline: 1px solid black;
+}
+
+.slider-images img {
   margin: 0 auto;
+  display: block;
 }
 
 .current-sales {
@@ -156,18 +160,47 @@ main .container {
 .sales-block {
   width: 560px;
   min-height: 232px;
-  border-radius: 10%;
-  border: 1px solid yellow;
+  border-radius: 25px;
   float: left;
+  color: white;
+  padding: 0px 23px;
+  box-sizing: border-box;
 }
 
 .sales-block:last-child {
   float: right;
 }
 
+.strawberry {
+  background-image: url("../img/malina.jpg");
+}
+
+.strawberry .btn-want {
+  width: 165px;
+}
+
+.chocolate {
+  background-image: url("../img/chocolate.jpg");
+}
+
+.chocolate .btn-want {
+  width: 190px;
+}
+
+.btn-want {
+  text-decoration: none;
+  color: white;
+  height: 47px;
+  display: block;
+  float: right;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  background: linear-gradient(#ff6633, #cc3333);
+}
+
 .hits {
   min-height: 333px;
-  background: black;
   outline: 1px solid black;
   font-size: 0;
   margin-bottom: 32px;
@@ -179,15 +212,51 @@ main .container {
   display: inline-block;
   outline: 1px solid white;
   font-size: 18px;
+  line-height: 24px;
   text-align: center;
   margin-right: 26px;
-  vertical-align: baseline;
+  vertical-align: top;
+  position: relative;
 }
 
 .hits .item:last-child {
   margin: 0;
 }
 
+.hits a {
+  text-decoration: none;
+  color: white;
+}
+
+.item img {
+  border-radius: 50%;
+}
+
+.hits a::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../img/hit-mark.jpg");
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.item-price {
+  position: absolute;
+  left: 0;
+  top: 215px;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.item-price::after {
+  content: "/кг";
+  font-size: 30px;
+  line-height: 45px;
+}
 
 .about-us {
   min-height: 310px;
