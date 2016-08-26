@@ -258,12 +258,73 @@ main .container {
   line-height: 45px;
 }
 
+.item-name { 
+  border-bottom: 1px solid #9db1a5;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .about-us {
   min-height: 310px;
   outline: 1px solid black;
-  background-color: green;
+  background: url("../img/pattern-block1.jpg");
+  border-radius: 20px;
   color: black;
+  box-sizing: border-box;
   margin-bottom: 37px;
+  padding: 1px 20px;
+  color: #323232;
+}
+
+.about-us > p {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 55px;
+}
+
+.feature {
+  display: inline-block;
+  width: 485px;
+  vertical-align: top;я
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  position: relative;
+}
+
+.feature:nth-child(2n+1) {
+  margin-right: 65px;
+}
+
+.feature::before {
+  content: "";
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: -57px;
+  top: -15px;
+}
+
+.feature:first-child::before {
+  background: url("../img/ice-cream.svg");
+}
+.feature:nth-child(2)::before {
+  background: url("../img/cow.svg");
+}
+.feature:nth-child(3)::before {
+  background: url("../img/listik.svg");
+}
+.feature:nth-child(4)::before {
+  background: url("../img/temperature.svg");
 }
 
 .bottom-block {
