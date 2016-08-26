@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <div class="logo"><img src="img/logo.svg" alt="Лого"></div>
       <nav class="main-menu">
+      <div class="logo"><img src="../img/logo.svg" alt="Лого"></div>
         <ul>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
@@ -20,34 +22,35 @@
       </nav>
 
       <div class="user-block">
-        <a href="#"><span class="sprite find"></span></a>
-        <a href="#"><span class="sprite login">Вход</span></a>
-        <a href="#"><span class="sprite cart">Пусто</span></a>
+        <a href="#" class="sprite find"></a>
+        <a href="#" class="sprite login">Вход</a>
+        <a href="#" class="sprite cart">Пусто</a>
       </div>
-
-      <div class="contacts">
-        <div class="schedule">С 10 до 20, ежедневно</div>
-        <div class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</div>
-        </div>
-      </div>
+    </div>
     </header>
 
     <main>
+      <div class="container">
       <section class="slider">
+        
+        <div class="slider-images">
+            <img src="img/ice-creams.png" alt="">
+            <img src="img-2" alt="">
+            <img src="img-3" alt="">
+          </div>
+
         <div class="slider-toggles">
           <span class="slider-toggle"></span>
           <span class="slider-toggle"></span>
           <span class="slider-toggle"></span>
         </div>
 
-          <div class="slider-images">
-            <img src="img/ice-creams.png" alt="">
-            <img src="img-2" alt="">
-            <img src="img-3" alt="">
-          </div>
         <a href="#">Давайте оба!</a>
-          </section>
+      </section>
 
+        <div class="contacts">
+        <div class="schedule">С 10 до 20, ежедневно</div>
+        <a href="tel:+78124502525" class="phone-number">8 812 450-25-25</a></div>
 
           <section class="current-sales clearfix">
             <div class="sales-block strawberry">
@@ -125,12 +128,12 @@
             <div class="address-data">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</div>
             <div class="address-description">Для заказов по телефону:</div>
             <div class="address-data"><a href="tel: +78124502525">8 812 450-25-25</a></div>
-            <div class="address-description">(с <time datetime="10:00">10</time> до <time datetime="20:00"20</time> ежедневно)</div>
+            <div class="address-description">(с <time datetime="10:00">10</time> до <time datetime="20:00">20</time> ежедневно)</div>
             <a href="#">Форма обратной связи</a>
           </div>
         </div>
       </address>
-
+      </div>
           </main>
 
           <footer class="main-footer">

@@ -1,10 +1,11 @@
 body {
   font-size: 18px;
   line-height: 22px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: black;
   font-weight: normal;
-  background-color: none;
+  background-color: #89a394;
+  min-width: 1200px;
 }
 
 h2 {
@@ -24,27 +25,120 @@ h2 {
   width: 1146px;
   min-height: 66px;
   margin: 0 auto;
-  padding: 0;
   outline: 1px solid black;
 }
 
 .main-menu {
-  min-height: 66px;
   width: 560px;
   float: left;
   outline: 1px solid black;
+  min-height: 70px;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+}
+
+.main-menu li {
+  display: inline-block;
+  vertical-align: top;
+  outline: 1px solid black;
+  padding: 30px 15px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #aac1b5;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .user-block {
-  min-height: 66px;
   width: 267px;
   float: right;
+  min-height: 70px;
+  box-sizing: border-box;
+  padding-top: 23px;
+  padding-bottom: 15px;
+  padding-left: 6px;
+  font-size: 0px;
+}
+
+.user-block .sprite {
+  display: inline-block;
+  min-height: 32px;
+  vertical-align: top;
+  background-color: #a3b8ad;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-top: 7px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.user-block .sprite:not(:last-child) {
+  margin-right: 10px;
+}
+
+.find {
+  border-radius: 50%;
+  width: 32px;
+}
+
+.login {
+  width: 92px;
+  border-radius: 20px;
+  text-align: right;
+  padding-right: 16px;
+}
+
+.cart {
+  width: 117px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 main {
   width: 1146px;
   margin: 0 auto;
   outline: 1px solid black;
+}
+
+main .container {
+  position: relative;
+}
+
+.contacts {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  color: white;
+}
+
+.contacts .schedule {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts .phone-number {
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 24px;
+  color: white;
 }
 
 .slider {
