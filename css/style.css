@@ -4,7 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: black;
   font-weight: normal;
-  background-color: #89a394;
+  background-color: #849d8f ;
   min-width: 1200px;
 }
 
@@ -195,7 +195,7 @@ main .container {
   float: right;
   border-radius: 30px;
   box-sizing: border-box;
-  padding: 12px 20px;
+  padding: 10px 20px;
   background: linear-gradient(#ff6633, #cc3333);
 }
 
@@ -328,18 +328,59 @@ main .container {
 }
 
 .bottom-block {
-  min-height: 223px;
+  min-height: 222px;
   width: 560px;
-  outline: 1px solid black;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .email-service {
   float: right;
+  background: url("../img/block2.png") no-repeat;
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 20px;
+  position: relative;
 }
 
 .news-in-blog {
   float: left;
-  color: black;
+  color: #323232;
+  padding-left: 21px;
+  padding-top: 10px;
+  background: url("../img/klubnika-block.jpg") no-repeat;
+}
+
+.news-in-blog h3 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.news-in-blog a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.email {
+  width: 368px;
+  position: absolute;
+  bottom: 42px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+
+.btn-send {
+  position: absolute;
+  right: 26px;
+  bottom: 42px;
+  border: none;
 }
 
 .feedback {
