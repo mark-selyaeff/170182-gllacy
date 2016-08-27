@@ -197,6 +197,7 @@ main .container {
   box-sizing: border-box;
   padding: 10px 20px;
   background: linear-gradient(#ff6633, #cc3333);
+  font-weight: bold;
 }
 
 .hits {
@@ -390,6 +391,50 @@ main .container {
 .map {
   height: 430px;
   outline: 1px solid black;
+  background: url("../img/ice-cream-map.png") no-repeat 265px 140px,
+              url("../img/map.jpg") no-repeat;
+  font-style: normal;
+  position: relative;
+}
+
+.address-block {
+  height: 305px;
+  background-color: white;
+  border-radius: 15px;
+  width: 302px;
+  position: absolute;
+  top: 63px;
+  right: 27px;
+  color: #323232;
+  padding: 30px 25px;
+  box-sizing: border-box;
+  padding-bottom: 150px;
+}
+
+.address-description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.address-data {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.phone-order { margin-top: 20px; }
+
+.address-data a {
+  color: #323232;
+  text-decoration: none;
+}
+
+.feedback-form {
+  width: 250px;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+
 }
 
 .main-footer section {
