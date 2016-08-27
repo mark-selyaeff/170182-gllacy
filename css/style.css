@@ -25,13 +25,11 @@ h2 {
   width: 1146px;
   min-height: 66px;
   margin: 0 auto;
-  outline: 1px solid black;
 }
 
 .main-menu {
   width: 560px;
   float: left;
-  outline: 1px solid black;
   min-height: 70px;
 }
 
@@ -47,7 +45,6 @@ h2 {
 .main-menu li {
   display: inline-block;
   vertical-align: top;
-  outline: 1px solid black;
   padding: 30px 15px;
   padding-bottom: 25px;
   font-size: 16px;
@@ -63,6 +60,12 @@ h2 {
 .logo {
   display: inline-block;
   vertical-align: top;
+  margin-right: 20px;
+}
+
+.logo img {
+  position: relative;
+  top: 12px;
 }
 
 .user-block {
@@ -114,7 +117,6 @@ h2 {
 main {
   width: 1146px;
   margin: 0 auto;
-  outline: 1px solid black;
 }
 
 main .container {
@@ -143,7 +145,6 @@ main .container {
 
 .slider {
   min-height: 581px;
-  outline: 1px solid black;
 }
 
 .slider-images img {
@@ -153,7 +154,6 @@ main .container {
 
 .current-sales {
   min-height: 232px;
-  outline: 1px solid black;
   margin-bottom: 38px;
 }
 
@@ -202,7 +202,6 @@ main .container {
 
 .hits {
   min-height: 333px;
-  outline: 1px solid black;
   font-size: 0;
   margin-bottom: 32px;
 }
@@ -211,7 +210,6 @@ main .container {
   width: 267px;
   min-height: 333px;
   display: inline-block;
-  outline: 1px solid white;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -267,7 +265,6 @@ main .container {
 
 .about-us {
   min-height: 310px;
-  outline: 1px solid black;
   background: url("../img/pattern-block1.jpg");
   border-radius: 20px;
   color: black;
@@ -390,11 +387,12 @@ main .container {
 
 .map {
   height: 430px;
-  outline: 1px solid black;
+  width: 1200px;
   background: url("../img/ice-cream-map.png") no-repeat 265px 140px,
               url("../img/map.jpg") no-repeat;
   font-style: normal;
   position: relative;
+  margin: 0 auto;
 }
 
 .address-block {
@@ -438,41 +436,102 @@ main .container {
 }
 
 .main-footer section {
-  outline: 1px solid black;
   float: left;
-  min-height: 104px;
+  min-height: 103px;
   margin-top: 0px;
+  box-sizing: border-box;
 }
 
 .social {
   width: 267px;
   margin-right: 26px;
+  padding-top: 35px;
+  font-size: 0px;
+}
+
+.social a {
+  margin-right: 12px;
+}
+
+.social img {
+  border: 3px solid #c2cec7;
+  border-radius: 50%;
 }
 
 .additional-info {
   width: 560px;
   margin-right: 26px;
+  padding: 30px 130px;
+  padding-bottom: 0px;
+}
+
+.additional-info table {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.additional-info td {
+  padding-right: 5px;
+}
+
+.additional-info a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #9db1a5;
+}
+
+.additional-info .active {
+  font-weight: bold;
+  position: relative;
+}
+
+.additional-info .active::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -22px;
+  top: 1px;
+  background: url("../img/heart.svg") no-repeat;
 }
 
 .developed-by {
   width: 267px;
   margin-right: 0px;
+  text-align: right;
+  padding-top: 20px;
 }
+
+.developed-by img {
+  margin-right: 80px;
+}
+
+.made-in {
+  font-size: 13px;
+  line-height: 18px;
+  color: white;
+}
+
+.made-in a {
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+  color: white;
+}
+
+
 
 /* Стили для catalog.html */
 .breadcrumbs {
-  outline: 1px solid black;
 }
 
 .items-list-block {
-  outline: 1px solid black;
   font-size: 0;
   margin-bottom: 70px;
 }
 
 .items-list-block > div {
   display: inline-block;
-  outline: 1px solid black;
   width: 267px;
   min-height: 339px;
   font-size: 18px;
@@ -485,12 +544,10 @@ main .container {
 }
 
 .pages {
-  outline: 1px solid black;
   text-align: right;
 }
 
 .pages a {
-  outline: 1px solid black;
 }
 
 .catalog-footer {
