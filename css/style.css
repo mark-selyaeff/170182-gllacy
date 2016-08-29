@@ -214,7 +214,8 @@ main .container {
   float: right;
   border-radius: 30px;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 0px 20px;
+  line-height: 47px;
   background: linear-gradient(#ff6633, #cc3333);
   font-weight: bold;
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
