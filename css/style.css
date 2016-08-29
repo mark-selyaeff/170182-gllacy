@@ -554,7 +554,46 @@ main .container {
 
 
 /* Стили для catalog.html */
+.catalog {
+  color: white;
+}
+
 .breadcrumbs {
+  border: 1px solid black;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  margin-top: 30px;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 16px;
+  padding-right: 21px;
+  position: relative;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #aebeb5;
+}
+
+.breadcrumbs li:not(.active)::after {
+  content: "»";
+  position: absolute;
+  right: 6px;
+}
+
+.breadcrumbs a.active {
+  border: none;
+  cursor: default;
 }
 
 .items-list-block {
@@ -582,6 +621,4 @@ main .container {
 .pages a {
 }
 
-.catalog-footer {
-  margin-top: 26px;
-}
+
