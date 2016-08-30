@@ -238,7 +238,7 @@ main .container {
   margin-bottom: 32px;
 }
 
-.hits .item {
+.item {
   width: 267px;
   min-height: 333px;
   display: inline-block;
@@ -250,11 +250,12 @@ main .container {
   position: relative;
 }
 
-.hits .item:last-child {
+.item:last-child {
   margin: 0;
 }
 
-.hits a {
+.hits a,
+.items-list-block a {
   text-decoration: none;
   color: white;
 }
@@ -263,7 +264,8 @@ main .container {
   border-radius: 50%;
 }
 
-.hits a::before {
+.hits a::before,
+.item-list-block a::before {
   content: "";
   display: block;
   width: 60px;
@@ -281,6 +283,7 @@ main .container {
   top: 215px;
   font-size: 45px;
   line-height: 45px;
+  font-weight: bold;
 }
 
 .item-price::after {
