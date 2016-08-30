@@ -601,7 +601,7 @@ main .container {
 
 .items-list-block {
   font-size: 0;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 
 .items-list-block > div {
@@ -617,11 +617,82 @@ main .container {
   margin-right: 0;
 }
 
-.pages {
+.paginator {
   text-align: right;
+  font-size: 0;
+  margin-right: 22px;
 }
 
-.pages a {
+.paginator a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  position: relative;
 }
 
+.paginator a.active {
+  background-color: white;
+  color: #323232;
+}
 
+.paginator a:first-child::before {
+  content: "<";
+  position: absolute;
+  left: -25px;
+}
+
+.paginator a:first-child.active::before {
+  content: "<";
+  opacity: 0.3;
+}
+
+.paginator a:last-child::after {
+  content: ">";
+  position: absolute;
+  right: -25px;
+}
+
+.paginator a:last-child.active::after{
+  content: ">";
+  opacity: 0.5;
+}
+
+.filters-block > h1 {
+  outline: 1px solid black;
+  margin-top: 5px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+label,
+div.percent-fat {
+  outline: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter-type {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+select {
+  display: block;
+  height: 35px;
+  width: 193px;
+  background-color: #a9bab0;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  border-radius: 25px;
+}

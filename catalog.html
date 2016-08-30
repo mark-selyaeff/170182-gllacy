@@ -47,16 +47,18 @@
         <h1>Сливочное мороженое</h1>
         <form name="filters">
           <label for="sort-method">
-            <select name="sort-method" size="1">
+          <div class="filter-type">Сортировка:</div>
+            <select name="sort-method" size="1">      
               <option value="popular">По популярности</option>
               <option value="price-up">Сначала недорогие</option>
               <option value="price-down">Сначала дорогие</option>
               <option value="fatness">По жирности</option>
-            </select>Сортировка:</label>
+            </select></label>
           <label for="price">
-            <input type="range" name="price" id="">Цена: 100 - 500 руб.</label>
+            <div class="filter-type">Цена: 100 - 500 руб.</div>
+            <input type="range" name="price" id=""></label>
           <!-- Вообще хз как делать этот инпут и лэйбл -->
-          <div class="percent-fat">Жирность:
+          <div class="percent-fat"><div class="filter-type">Жирность:</div>
             <label>
               <input type="radio" name="percent-fat" id="" value="0%">0%</label>
             <label>
@@ -67,6 +69,7 @@
               <input type="radio" name="percent-fat" id="" value="+30%">Выше 30%</label>
           </div>
           <div class="inner">
+          <div class="filter-type">Наполнители:</div>
             <label>
               <input type="checkbox" name="inner" checked>Шоколадные</label>
             <label>
@@ -78,7 +81,7 @@
             <label>
               <input type="checkbox" name="inner">Джемы</label>
           </div>
-          <button>Отправить</button>
+          <button type="submit">Отправить</button>
         </form>
       </section>
       <section class="items-list-block">
@@ -168,8 +171,8 @@
         </div>
       </section>
 
-      <div class="pages">
-        <a href="#">1</a>
+      <div class="paginator">
+        <a href="#" class="active">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
