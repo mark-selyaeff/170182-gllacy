@@ -16,7 +16,7 @@
         <nav class="main-menu">
         <div class="logo"><img src="img/logo.svg" alt="Лого"></div>
           <ul>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="#" class="active">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
@@ -25,7 +25,7 @@
         <div class="user-block">
           <a href="#" class="sprite find"><img src="img/loop.svg" alt="" class="loop"></a>
           <a href="#" class="sprite login"><img src="img/login.svg" alt="" class="login-img" width="20" height="20">Вход</a>
-          <a href="#" class="sprite cart"><img src="img/cart.svg" alt="" class="cart-img" width="20" height="20">Пусто</a>
+          <a href="#" class="sprite cart"><img src="img/cart-full.svg" alt="" class="cart-img" width="20" height="20">2 товара</a>
         </div>
       </div>
   </header>
@@ -45,7 +45,7 @@
       </div>
       <section class="filters-block">
         <h1>Сливочное мороженое</h1>
-        <form name="filters">
+        <form name="filters" class="filters">
           <label for="sort-method">
           <div class="filter-type">Сортировка:</div>
             <select name="sort-method" size="1">      
@@ -56,30 +56,34 @@
             </select></label>
           <label for="price">
             <div class="filter-type">Цена: 100 - 500 руб.</div>
-            <input type="range" name="price" id=""></label>
+            <div class="input-range"><input type="range" name="price" id="" class="range"></div></label>
           <!-- Вообще хз как делать этот инпут и лэйбл -->
           <div class="percent-fat"><div class="filter-type">Жирность:</div>
-            <label>
-              <input type="radio" name="percent-fat" id="" value="0%">0%</label>
-            <label>
-              <input type="radio" name="percent-fat" id="" value="10%" checked>До 10%</label>
-            <label>
-              <input type="radio" name="percent-fat" id="" value="-30%">До 30%</label>
-            <label>
-              <input type="radio" name="percent-fat" id="" value="+30%">Выше 30%</label>
+            <div class="percent-fat-radio">
+              <input type="radio" id="percent-fat-0" value="0%">
+              <label for="percent-fat-0">0%</label>
+              <input type="radio" id="percent-fat-10" value="10%" checked>
+              <label for="percent-fat-10">До 10%</label>
+              <input type="radio" id="percent-fat-30" value="-30%">
+              <label for="percent-fat-30">До 30%</label>            
+              <input type="radio" id="percent-fat-31" value="+30%">
+              <label for="percent-fat-31">Выше 30%</label>
+            </div>
           </div>
           <div class="inner">
           <div class="filter-type">Наполнители:</div>
-            <label>
-              <input type="checkbox" name="inner" checked>Шоколадные</label>
-            <label>
-              <input type="checkbox" name="inner" checked>Сахарные присыпки</label>
-            <label>
-              <input type="checkbox" name="inner">Фрукты</label>
-            <label>
-              <input type="checkbox" name="inner">Сиропы</label>
-            <label>
-              <input type="checkbox" name="inner">Джемы</label>
+            <div class="inner-checkboxes">
+            <input type="checkbox" name="inner" id="chocolate" checked>
+            <label for="chocolate">Шоколадные</label>
+            <input type="checkbox" name="inner" id="sugar" checked>
+            <label for="sugar">Сахарные присыпки</label>
+            <input type="checkbox" name="inner" id="fruits">
+            <label for="fruits">Фрукты</label>
+            <input type="checkbox" name="inner" id="sirops">
+            <label for="sirops">Сиропы</label>
+            <input type="checkbox" name="inner" id="jams">
+            <label for="jams">Джемы</label>
+            </div>
           </div>
           <button type="submit">Отправить</button>
         </form>
@@ -191,16 +195,14 @@
                 <a href="#" class="social-vk"><img src="img/vk.svg" alt=""></a>
               </section>
               <section class="additional-info">
-                <table>
-                  <tr>
-                  <td><a href="#" class="active">Для поставщиков</a></td>
-                  <td><a href="#">О производстве</a></td>
-                  </tr>
-                  <tr>
-                  <td><a href="#">Наши документы</a></td>
-                  <td><a href="#">Экологические стандарты</a></td>
-                  </tr>
-                </table>
+                <ul>
+                  <li><a href="#" class="active">Для поставщиков</a>
+                  <li><a href="#">О производстве</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Наши документы</a></li>
+                  <li><a href="#">Экологические стандарты</a></li>
+                </ul>
               </section>
               <section class="developed-by">
                 <img src="img/hacademy-logo.svg" alt="HTML Academy">
