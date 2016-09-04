@@ -62,13 +62,24 @@ h2 {
   text-decoration: none;
   border-bottom: 1px solid #aac1b5;
   display: block;
+  position: relative;
 }
 
 .main-menu a.active {
   border: none;
+}
+
+.main-menu .active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 87px;
+  height: 32px;
+  border-radius: 14px;
+  left: -14px;
+  top: -6px;
   background-color: #d07058;
-  box-sizing: border-box;
-  border-radius: 13px;
+  z-index: -1;
 }
 
 .logo {
