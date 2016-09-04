@@ -405,7 +405,7 @@ body > input[type="radio"] {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .item-price::after {
@@ -825,6 +825,10 @@ div.percent-fat {
   vertical-align: top;
 }
 
+.filters > label {
+  margin-right: 10px;
+}
+
 .filter-type {
   font-size: 14px;
   line-height: 16px;
@@ -849,10 +853,42 @@ select {
   text-align: center;
   height: 35px;
   background-color: #a9bab0;
-  padding-top: 8px;
+  padding: 0 16px;
+  padding-top: 15px;
   width: 220px;
   border-radius: 20px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.input-range .scale {
+  height: 4px;
+  background-color: #d1dad3;
+}
+
+.input-range .bar {
+  background-color: white;
+  width: 50%;
+  height: 4px;
+  position: relative;
+  left: 20%;
+}
+
+.input-range .toggle {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 8px;
+}
+
+.toggle.min {
+  left: 50px;
+}
+
+.toggle.max {
+  left: 135px;
 }
 
 .percent-fat-radio {
@@ -928,6 +964,7 @@ select {
 .inner-checkboxes label {
   position: relative;
   margin-right: 35px;
+  text-transform: lowercase;
 }
 
 .inner-checkboxes label:last-child {
@@ -965,6 +1002,7 @@ select {
   background-color: #a9bab0;
   height: 35px;
   width: 145px;
-  border-radius: 20px
-  ;
+  border-radius: 20px;
+  position: relative;
+  bottom: 1px;
 }
