@@ -853,10 +853,25 @@ select {
   height: 35px;
   width: 193px;
   background-color: #a9bab0;
+  background-image: url("../img/triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 170px 15px;
   font-size: 16px;
   line-height: 18px;
   color: white;
   border-radius: 25px;
+  border: none;
+  padding-left: 15px;
+  /*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none;
+  position: relative;
 }
 
 .input-range {
