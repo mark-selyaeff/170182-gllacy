@@ -1033,3 +1033,18 @@ select {
   bottom: 1px;
   border: 2px solid white;
 }
+
+label span,
+form span {
+  display: block;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.price {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 9px;
+}

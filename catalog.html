@@ -47,14 +47,14 @@
         <h1>Сливочное мороженое</h1>
         <form name="filters" class="filters">
           <label for="sort-method">
-            <div class="filter-type">Сортировка:</div>
-            <select name="sort-method" size="1">      
+            <span class="filter-type">Сортировка:</span>
+            <select name="sort-method" size="1" id="sort-method">      
               <option value="popular">По популярности</option>
               <option value="price-up">Сначала недорогие</option>
               <option value="price-down">Сначала дорогие</option>
               <option value="fatness">По жирности</option>
             </select></label>
-            <label for="price">
+            <div class="price">
               <div class="filter-type">Цена: 100 - 500 руб.</div>
               <div class="input-range">
                 <div class="scale">
@@ -62,7 +62,7 @@
                 </div>
                 <div class="toggle min"></div>
                 <div class="toggle max"></div>
-              </div></label>
+              </div></div>
               <div class="percent-fat"><div class="filter-type">Жирность:</div>
               <div class="percent-fat-radio">
                 <input type="radio" id="percent-fat-0" value="0%">
