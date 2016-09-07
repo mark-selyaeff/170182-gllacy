@@ -34,7 +34,7 @@ h2 {
 }
 
 .main-menu {
-  width: 560px;
+  min-width: 560px;
   float: left;
   min-height: 70px;
 }
@@ -310,7 +310,7 @@ body > input[type="radio"] {
 }
 
 .sales-block {
-  min-width: 560px;
+  width: 560px;
   min-height: 232px;
   border-radius: 25px;
   float: left;
