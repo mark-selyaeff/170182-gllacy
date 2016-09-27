@@ -1146,5 +1146,5 @@ select::-ms-expand {
 
 .modal-overlay,
 .modal-content {
-  /*display: none;*/
+  display: none;
 }
