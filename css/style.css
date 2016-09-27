@@ -1062,6 +1062,7 @@ select::-ms-expand {
   border-radius: 5px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   z-index: 20;
+  display: none;
 }
 
 .feedback-form-modal {
@@ -1135,6 +1136,7 @@ select::-ms-expand {
 }
 
 .modal-overlay {
+  display: none;
   position: fixed;
   z-index: 10;
   background: rgba(0, 0, 0, 0.5);
@@ -1144,7 +1146,6 @@ select::-ms-expand {
   height: 100%;
 }
 
-.modal-overlay,
-.modal-content {
-  display: none;
+.modal-show {
+  display: block;
 }
