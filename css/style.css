@@ -70,6 +70,7 @@ h2 {
   border-radius: 4px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
   z-index: 10;
+  display: none;
 }
 
 .main-menu .catalog-modal-content li {
@@ -1186,5 +1187,5 @@ select::-ms-expand {
 }
 
 .modal-show {
-  display: block;
+  display: block !important;
 }
