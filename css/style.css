@@ -55,7 +55,46 @@ h2 {
   padding-bottom: 25px;
   font-size: 16px;
   line-height: 18px;
+  position: relative;
 }
+
+.main-menu .catalog-modal-content {
+  position: absolute;
+  left: 0px;
+  top: 55px;
+  background-color: #f8f7f4;
+  list-style: none;
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.main-menu .catalog-modal-content li {
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 15px;
+  color: #323232;
+  width: 75px;
+  cursor: pointer;
+}
+
+.main-menu .catalog-modal-content li:hover {
+  background: #fbded8;
+}
+
+.main-menu .catalog-modal-content li:active {
+  background: #f6b5a5
+}
+
+.main-menu .catalog-modal-content li:first-child {
+  border-bottom: 1px solid #d1d0ce;
+  font-weight: 700;
+}
+
 
 .main-menu a {
   color: white;
