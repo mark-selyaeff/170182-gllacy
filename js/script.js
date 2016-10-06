@@ -21,3 +21,7 @@ catalog.addEventListener("mouseover", function(event) {
 	event.preventDefault();
 	catalog_popup.classList.add("modal-show");
 });
+
+catalog.addEventListener("mouseout", function(event) {
+	catalog_popup.classList.remove("modal-show");
+});
